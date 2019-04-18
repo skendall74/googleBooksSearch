@@ -19,7 +19,7 @@ module.exports = function(app)  {
     app.post("/search", (req, res) => {
         let bookTitle = req.body.title.replace(/\s/g, "+");
         axios.get(
-            `https://www.googleapis.com/books/v1/volumes?q=${bookTItle}&key=${process.env.GBOOKS_KEY}`
+            `https://www.googleapis.com/books/v1/volumes?q=${bookTitle}&key=${process.env.SECRET_KEY}`
         ).then(
             (response) => {
                 res.json(response.data.items)
