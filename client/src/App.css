@@ -3,7 +3,7 @@ nav {
   padding: 1rem 0;
 }
 
-nav h2 {
+nav h1 {
   display: inline;
   margin: 0 2vw;
   font-size: 1.25rem;
@@ -17,7 +17,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(5, 4, 4);
   height: 100%;
 }
 nav a:visited {
@@ -126,7 +126,6 @@ button[disabled] {
   display: inline-block;
   width: 75%;
   padding: 0;
-  /* margin: 1.75vw 0 0 1.75vw; */
 }
 
 .btnDiv {
