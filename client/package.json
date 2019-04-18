@@ -4,6 +4,10 @@
   "description": "Mern Demo",
   "private": true,
   "proxy": "http://localhost:3001/",
+  "engines": {
+    "npm": "6.9.0",
+    "node": "11.14.0"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.8.6",
