@@ -12,8 +12,7 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "engines":
-  {
+  "engines": {
     "node": "v11.7.0"
   },
   "author": "Shannon Kendall",
