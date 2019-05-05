@@ -1,6 +1,6 @@
 {
   "name": "mern",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mern Demo",
   "main": "server.js",
   "scripts": {
@@ -11,6 +11,10 @@
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
+  },
+  "engines":
+  {
+    "node": "v11.7.0"
   },
   "author": "Shannon Kendall",
   "license": "ISC",
