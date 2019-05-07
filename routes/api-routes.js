@@ -16,8 +16,11 @@ module.exports = function(app)  {
         )
     });
 
-    app.post("/search", (req, res) => {
-        let bookTitle = req.body.title.replace(/\s/g, "+");
+    app.get("/search/:title", (req, res) => {
+        console.log(req.params.title);
+        let bookTitle = req.params.title.replace(/\s/g, "+");
+
+        console.log(bookTitle, process.env.SECRET_KEY);
         axios.get(
             `https://www.googleapis.com/books/v1/volumes?q=${bookTitle}&key=${process.env.SECRET_KEY}`
         ).then(
