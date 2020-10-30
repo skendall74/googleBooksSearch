@@ -10,7 +10,7 @@ npm i
 This should install node modules within the server and the client folder.
 
 #Second Step:
-After both installations complete, run the following command while in your root folder, in one terminal: nodman server.js 
+After both installations complete, run the following command while in your root folder, in one terminal: nodemon server.js
 
 #Third Step:
 While in another terminal, in your client folder run the following command: npm start
