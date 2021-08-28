@@ -101,7 +101,7 @@ function checkValidServiceWorker(swUrl) {
 
 export function unregister() {
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').then(function (registration) {
+    navigator.serviceWorker.register('/registerServiceWorker.js').then(function (registration) {
         console.log('service worker registration succeeded:', registration);
       },
       function (error) {
