@@ -100,14 +100,20 @@ function checkValidServiceWorker(swUrl) {
 }
 
 export function unregister() {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/registerServiceWorker.js').then(function (registration) {
-        console.log('service worker registration succeeded:', registration);
-      },
-      function (error) {
-        console.log('service worker registration failed:', error);
-      });
-  } else {
-    console.log('service workers are not supported.');
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.ready.then(registration => {
+      registration.unregister();
+    });
   }
+}
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(function (registration) {
+      console.log('service worker registration succeeded:', registration);
+    },
+    function (error) {
+      console.log('service worker registration failed:', error);
+    });
+} else {
+  console.log('service workers are not supported.');
 }
