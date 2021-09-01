@@ -1,7 +1,7 @@
 {
-  "name": "mern",
-  "version": "1.0.1",
-  "description": "Mern Demo",
+  "name": "googlebooksearch",
+  "version": "1.0.2",
+  "description": "Google Book Search",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -28,13 +28,5 @@
     "if-env": "^1.0.4",
     "mongodb": "^3.2.3",
     "mongoose": "^5.5.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/skendall74/googleBooksSearch.git"
-  },
-  "bugs": {
-    "url": "https://github.com/skendall74/googleBooksSearch/issues"
-  },
-  "homepage": "https://github.com/skendall74/googleBooksSearch#readme"
+  }
 }
