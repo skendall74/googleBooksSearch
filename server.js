@@ -12,19 +12,17 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const mongoose = require("mongoose");
-const mongoURL =
-  process.env.PROD_MONGODB || "mongodb://localhost:27017/googlebooks";
-mongoose
-  .connect(mongoURL, { useNewUrlParser: true })
-  .then(() => {
-    console.log("🗄 ==> Successfully connected to mongoDB.");
-  })
-  .catch(err => {
-    console.log(`Error connecting to mongoDB: ${err}`);
-  });
+const MONGODB_URI =
+  process.env.MONGODB_URI || "mongodb://localhost:27017/googlebooks";
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 require("./routes/api-routes")(app);
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
-});
+});   
+
+// Final Project
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
