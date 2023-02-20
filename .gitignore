@@ -7,6 +7,9 @@ yarn-error.log*
 
 .DS_Store.env
 
+node_modules
+.DS_Store
+
 # Runtime data
 pids
 *.pid
