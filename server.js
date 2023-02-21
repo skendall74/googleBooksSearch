@@ -21,7 +21,8 @@ mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true
 });
 
-require("./routes/api-routes")(app);
+// Use all routes
+app.use(routes);
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
