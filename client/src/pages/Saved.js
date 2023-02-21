@@ -13,7 +13,7 @@ class Saved extends React.Component {
   componentWillMount() {
     API.getBooks()
       .then(response => {
-        this.setState({ savedBooks: response.data.config.data });
+        this.setState({ savedBooks: response.data });
       })
       .catch(err => {
         console.log(err);
