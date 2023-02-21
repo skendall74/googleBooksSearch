@@ -4,7 +4,6 @@
   "description": "Mern Demo",
   "private": true,
   "proxy": "http://localhost:3001/",
-  "secure": false,
   "engines": {
     "npm": "6.9.0",
     "node": "11.14.0"
