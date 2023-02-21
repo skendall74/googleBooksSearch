@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3001 || 3002
+const PORT = process.env.PORT || 3001 || 
 
 // Define middleware here
 app.use(express.urlencoded({
