@@ -22,7 +22,7 @@ class Search extends React.Component {
   handleSearchClick(e) {
     e.preventDefault();
     API.searchBooks(this.state.bookInput).then(response => {
-      this.setState({ bookData: response.data });
+      this.setState({ bookData: response.config.data });
       this.setState({ bookInput: "" });
     });
   }
