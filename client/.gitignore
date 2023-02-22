@@ -2,3 +2,7 @@
 
 # dependencies
 /node_modules
+
+# Netfly Build
+Nuxt generate
+dist
