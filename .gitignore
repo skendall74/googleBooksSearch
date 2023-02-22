@@ -7,9 +7,6 @@ yarn-error.log*
 
 .DS_Store.env
 
-# Netfly Build
-Nuxt generate
-
 # Runtime data
 pids
 *.pid
