@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Google Book Search",
   "main": "server.js",
-  "proxy": "http://0.0.0.0:3001", 
+  "proxy": "http://0.0.0.0:3001",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev --ignore client",
     "start:prod": "node server.js --ignore client",
