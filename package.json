@@ -1,0 +1,33 @@
+{
+  "name": "googlebooksearch",
+  "version": "1.0.2",
+  "description": "Google Book Search",
+  "main": "server.js",
+  "proxy": "http://0.0.0.0:3001", 
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev --ignore client",
+    "start:prod": "node server.js --ignore client",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": "v11.7.0"
+  },
+  "author": "Shannon Kendall",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "axios": "^1.3.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "if-env": "^1.0.4",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.5.2"
+  }
+}
