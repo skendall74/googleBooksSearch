@@ -4,17 +4,25 @@
   "description": "Mern Demo",
   "private": true,
   "proxy": "http://localhost:3001/",
+  "secure": false,
   "engines": {
     "npm": "6.9.0",
     "node": "11.14.0"
   },
   "dependencies": {
     "axios": "^0.21.1",
+<<<<<<< HEAD
     "mongodb": "^4.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3"
+=======
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.0"
+>>>>>>> da7dab71e4424912e2cbcfb48654c9bedd4f5b65
   },
   "scripts": {
     "start": "react-scripts start",
